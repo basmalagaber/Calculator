@@ -223,7 +223,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
   }
 
   onEqualClick(operator) {
-    result = calculate(left, op, result);
+    result = "= ${calculate(left, op, result)}";
     op = operator;
     setState(() {});
   }
